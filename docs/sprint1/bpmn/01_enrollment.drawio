@@ -1,0 +1,128 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="01_enrollment" id="model1">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1500" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label="Пул: Студент" id="pool_student">
+          <mxCell parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;verticalAlign=top;align=left;fontStyle=1;fontSize=13;spacingLeft=8;spacingTop=4;" vertex="1">
+            <mxGeometry height="130" width="1400" x="40" y="20" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="pool_edu" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;verticalAlign=top;align=left;fontStyle=1;fontSize=13;spacingLeft=8;spacingTop=4;" value="Пул: ЕдуПортал" vertex="1">
+          <mxGeometry height="460" width="1400" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_line" parent="1" style="line;strokeColor=#666666;html=1;" value="" vertex="1">
+          <mxGeometry height="2" width="1400" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_system_lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontSize=12;" value="Доріжка: Система" vertex="1">
+          <mxGeometry height="20" width="260" x="50" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_teacher_lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontSize=12;" value="Доріжка: Викладач / Менеджер курсів" vertex="1">
+          <mxGeometry height="20" width="300" x="55" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Студент відкрив сторінку курсу" vertex="1">
+          <mxGeometry height="80" width="80" x="70" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Ввести кодове слово" vertex="1">
+          <mxGeometry height="60" width="140" x="280" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="ann1" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=4;" value="Кодове слово задає викладач або менеджер курсів" vertex="1">
+          <mxGeometry height="60" width="190" x="480" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="g2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" value="Метод зарахування?" vertex="1">
+          <mxGeometry height="90" width="95" x="205" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Перевірити слово, дати зарахування, вільні місця, передумови" vertex="1">
+          <mxGeometry height="70" width="170" x="355" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="dobj" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" value="Курс" vertex="1">
+          <mxGeometry height="60" width="60" x="450" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="g5" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" value="Перевірки пройдено?" vertex="1">
+          <mxGeometry height="80" width="80" x="700" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" value="Відхилено" vertex="1">
+          <mxGeometry height="70" width="70" x="630" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" value="Місць немає" vertex="1">
+          <mxGeometry height="70" width="70" x="810" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Створити зарахування" vertex="1">
+          <mxGeometry height="60" width="140" x="920" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Надати доступ до матеріалів" vertex="1">
+          <mxGeometry height="60" width="150" x="1120" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" value="Зараховано" vertex="1">
+          <mxGeometry height="70" width="70" x="1330" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="oeCzmRDLHlDnzwQYwzGf-1" edge="1" parent="1" source="n8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Побачити студента у списку учасників" vertex="1">
+          <mxGeometry height="60" width="170" x="905" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_target" parent="1" style="ellipse;html=1;fillColor=none;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="1180" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="n1" style="endArrow=block;dashed=1;html=1;strokeColor=#000000;" target="g2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2a" edge="1" parent="1" source="g2" style="endArrow=block;dashed=1;html=1;strokeColor=#000000;" target="n3" value="самозарахування">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2b" edge="1" parent="1" source="g2" style="endArrow=block;html=1;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="n6" value="вручну менеджером">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="252.5" y="360" />
+              <mxPoint x="610" y="360" />
+              <mxPoint x="920" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="n3" style="endArrow=block;dashed=1;html=1;strokeColor=#000000;" target="n4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dobj" edge="1" parent="1" source="n4" style="endArrow=none;dashed=1;html=1;strokeColor=#999999;" target="dobj" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="n4" style="endArrow=block;html=1;strokeColor=#000000;" target="g5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5a" edge="1" parent="1" source="g5" style="endArrow=block;html=1;strokeColor=#000000;" target="n10" value="ні">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5b" edge="1" parent="1" source="g5" style="endArrow=block;html=1;strokeColor=#000000;" target="n11" value="ні, місць немає">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5c" edge="1" parent="1" source="g5" style="endArrow=block;html=1;strokeColor=#000000;" target="n6" value="так">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="n6" style="endArrow=block;html=1;strokeColor=#000000;" target="n7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6b" edge="1" parent="1" source="n6" style="endArrow=block;html=1;strokeColor=#000000;" target="n8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="n7" style="endArrow=block;html=1;strokeColor=#000000;" target="n9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_msg" edge="1" parent="1" source="n7" style="endArrow=block;dashed=1;html=1;strokeColor=#000000;entryX=0.825;entryY=1.028;entryDx=0;entryDy=0;entryPerimeter=0;" target="pool_student" value="надати доступ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ann" edge="1" parent="1" source="n3" style="endArrow=none;dashed=1;html=1;strokeColor=#999999;" target="ann1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="TFl7tiZrFoLFqAbgIxIb" name="Сторінка-2">
+    <mxGraphModel dx="732" dy="710" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
