@@ -4,52 +4,101 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="pool_student" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;verticalAlign=top;align=left;fontStyle=1;fontSize=13;spacingLeft=8;spacingTop=4;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(72, 71, 61));&quot;&gt;Пул: Студент&lt;/span&gt;" vertex="1">
-          <mxGeometry height="340" width="1220" x="40" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="pool_edu" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;verticalAlign=top;align=left;fontStyle=1;fontSize=13;spacingLeft=8;spacingTop=4;" value="Пул: ЕдуПортал /&amp;nbsp;&lt;div&gt;Доріжка: Система&lt;/div&gt;" vertex="1">
+        <object label="Студент" id="pool_student">
+          <mxCell parent="1" style="swimlane;html=1;horizontal=0;whiteSpace=wrap;startSize=30;fillColor=none;strokeColor=#000000;fontStyle=1;fontSize=13;" vertex="1">
+            <mxGeometry height="340" width="1220" x="40" y="30" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="pool_edu" parent="1" style="swimlane;html=1;horizontal=0;whiteSpace=wrap;startSize=30;fillColor=none;strokeColor=#000000;fontStyle=1;fontSize=13;" value="ЕдуПортал" vertex="1">
           <mxGeometry height="320" width="1220" x="40" y="390" as="geometry" />
         </mxCell>
+        <mxCell id="lane_system_lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=2;fontSize=12;" value="Доріжка: Система" vertex="1">
+          <mxGeometry height="20" width="220" x="80" y="410" as="geometry" />
+        </mxCell>
+        
         <mxCell id="n1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Студент почав спробу" vertex="1">
           <mxGeometry height="80" width="80" x="140" y="160" as="geometry" />
         </mxCell>
+        
+        <mxCell id="n_start_system" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Отримано запит" vertex="1">
+          <mxGeometry height="60" width="60" x="150" y="420" as="geometry" />
+        </mxCell>
+
         <mxCell id="n4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#666666;verticalAlign=top;align=center;spacingTop=8;fontStyle=1;" value="Відповісти на питання (цикл: питання за питанням)" vertex="1">
-          <mxGeometry height="320" width="210" x="255" y="40" as="geometry" />
+          <mxGeometry height="320" width="210" x="320" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="n5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" value="⏱ Час на спробу вичерпано" vertex="1">
-          <mxGeometry height="60" width="60" x="465" y="260" as="geometry" />
+        
+        <mxCell id="n5" parent="1" style="shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=catching;symbol=timer;labelPosition=center;spacingTop=0;fontSize=10;" value="Час вичерпано" vertex="1">
+          <mxGeometry height="50" width="50" x="460" y="335" as="geometry" />
         </mxCell>
+        
         <mxCell id="n6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Завершити спробу" vertex="1">
           <mxGeometry height="60" width="140" x="650" y="170" as="geometry" />
         </mxCell>
-        <mxCell id="g2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" value="Вікно і спроби в межах ліміту?" vertex="1">
-          <mxGeometry height="110" width="110" x="125" y="480" as="geometry" />
+        <mxCell id="n_end_student" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" value="Студент закінчив" vertex="1">
+          <mxGeometry height="60" width="60" x="840" y="170" as="geometry" />
         </mxCell>
+
+        <mxCell id="g2" parent="1" style="shape=mxgraph.bpmn.gateway2;html=1;outlineConnect=0;bpmnGatewayType=exclusive;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="Вікно і спроби в межах ліміту?" vertex="1">
+          <mxGeometry height="90" width="90" x="135" y="495" as="geometry" />
+        </mxCell>
+        
         <mxCell id="n11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" value="Спроби вичерпано" vertex="1">
           <mxGeometry height="70" width="70" x="145" y="630" as="geometry" />
         </mxCell>
+        
         <mxCell id="n3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Сформувати сторінки з питаннями" vertex="1">
-          <mxGeometry height="70" width="150" x="285" y="495" as="geometry" />
+          <mxGeometry height="70" width="150" x="285" y="505" as="geometry" />
         </mxCell>
+        
         <mxCell id="n7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Автоматично оцінити" vertex="1">
           <mxGeometry height="70" width="150" x="650" y="495" as="geometry" />
         </mxCell>
+        
         <mxCell id="dobj" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" value="Ключ відповідей" vertex="1">
           <mxGeometry height="60" width="60" x="560" y="500" as="geometry" />
         </mxCell>
+        
         <mxCell id="ann1" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=10;align=left;spacingLeft=4;" value="Частковий бал за питання з кількома правильними — рахує QuizScorer" vertex="1">
           <mxGeometry height="60" width="260" x="600" y="600" as="geometry" />
         </mxCell>
+        
         <mxCell id="n8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Записати результат у журнал і показати студенту" vertex="1">
-          <mxGeometry height="70" width="170" x="830" y="500" as="geometry" />
+          <mxGeometry height="70" width="170" x="830" y="495" as="geometry" />
         </mxCell>
+
+        <mxCell id="g3" parent="1" style="shape=mxgraph.bpmn.gateway2;html=1;outlineConnect=0;bpmnGatewayType=exclusive;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="Як завершено спробу?" vertex="1">
+          <mxGeometry height="80" width="80" x="1030" y="490" as="geometry" />
+        </mxCell>
+        
         <mxCell id="n9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" value="Спробу завершено" vertex="1">
-          <mxGeometry height="100" width="100" x="1130" y="410" as="geometry" />
+          <mxGeometry height="80" width="80" x="1150" y="410" as="geometry" />
         </mxCell>
         <mxCell id="n10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" value="Час вичерпано, автозавершення" vertex="1">
-          <mxGeometry height="100" width="100" x="1130" y="580" as="geometry" />
+          <mxGeometry height="80" width="80" x="1150" y="580" as="geometry" />
         </mxCell>
-        <mxCell id="e1" edge="1" parent="1" source="n1" style="endArrow=block;dashed=1;html=1;strokeColor=#000000;" target="g2" value="">
+
+        <mxCell id="NhTPWghT2PwqCPIxTWYN-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Питання показано" vertex="1">
+          <mxGeometry height="60" width="60" x="395" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NhTPWghT2PwqCPIxTWYN-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Обрати/ввести відповідь" vertex="1">
+          <mxGeometry height="40" width="120" x="365" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="NhTPWghT2PwqCPIxTWYN-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Зберегти відповідь" vertex="1">
+          <mxGeometry height="30" width="120" x="365" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="NhTPWghT2PwqCPIxTWYN-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" value="Відповідь збережено" vertex="1">
+          <mxGeometry height="70" width="70" x="390" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="NhTPWghT2PwqCPIxTWYN-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" value="&lt;br style=&quot;font-size: 13px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(72, 71, 61)); font-size: 13px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-family: anthropic-sans, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Helvetica, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;PingFang TC&amp;quot;, &amp;quot;Hiragino Sans&amp;quot;, &amp;quot;Apple SD Gothic Neo&amp;quot;, sans-serif, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;PingFang SC&amp;quot;, &amp;quot;PingFang TC&amp;quot;, &amp;quot;Hiragino Sans&amp;quot;, &amp;quot;Apple SD Gothic Neo&amp;quot;, sans-serif; font-size: 14px; font-weight: 400;&quot;&gt;↻&lt;/span&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="50" x="480" y="310" as="geometry" />
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="e_start_msg" edge="1" parent="1" source="n1" style="endArrow=block;dashed=1;html=1;strokeColor=#000000;" target="n_start_system" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_start_sys" edge="1" parent="1" source="n_start_system" style="endArrow=block;html=1;strokeColor=#000000;" target="g2" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e2a" edge="1" parent="1" source="g2" style="endArrow=block;html=1;strokeColor=#000000;" target="n11" value="ні">
@@ -58,18 +107,31 @@
         <mxCell id="e2b" edge="1" parent="1" source="g2" style="endArrow=block;html=1;strokeColor=#000000;" target="n3" value="так">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" edge="1" parent="1" source="n3" style="endArrow=block;dashed=1;html=1;strokeColor=#000000;" target="n4" value="">
+        <mxCell id="e3" edge="1" parent="1" source="n3" style="endArrow=block;dashed=1;html=1;strokeColor=#000000;edgeStyle=orthogonalEdgeStyle;" target="NhTPWghT2PwqCPIxTWYN-1" value="">
+          <mxGeometry relative="1" as="geometry">
+             <Array as="points">
+              <mxPoint x="360" y="380" />
+              <mxPoint x="280" y="380" />
+              <mxPoint x="280" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="e4" edge="1" parent="1" source="n4" style="endArrow=block;html=1;strokeColor=#000000;" target="n6" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" edge="1" parent="1" source="n4" style="endArrow=block;html=1;strokeColor=#000000;" target="n6" value="нормальне завершення">
+        <mxCell id="e_student_end_flow" edge="1" parent="1" source="n6" style="endArrow=block;html=1;strokeColor=#000000;" target="n_end_student" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e5" edge="1" parent="1" source="n5" style="endArrow=block;dashed=1;html=1;strokeColor=#000000;" target="n7" value="перериває, автозавершення">
+
+        <mxCell id="e5" edge="1" parent="1" source="n5" style="endArrow=block;html=1;strokeColor=#000000;edgeStyle=orthogonalEdgeStyle;" target="n7" value="перериває">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        
         <mxCell id="e6" edge="1" parent="1" source="n6" style="endArrow=block;dashed=1;html=1;strokeColor=#000000;" target="n7" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        
         <mxCell id="e_dobj" edge="1" parent="1" source="n7" style="endArrow=none;dashed=1;html=1;strokeColor=#999999;" target="dobj" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -79,40 +141,27 @@
         <mxCell id="e7" edge="1" parent="1" source="n7" style="endArrow=block;html=1;strokeColor=#000000;" target="n8" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e8a" edge="1" parent="1" source="n8" style="endArrow=block;html=1;strokeColor=#000000;" target="n9" value="нормальне завершення">
-          <mxGeometry relative="1" x="-0.2471" y="2" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e8b" edge="1" parent="1" source="n8" style="endArrow=block;html=1;strokeColor=#000000;" target="n10" value="автозавершення за таймером">
-          <mxGeometry relative="1" x="-0.3373" y="-1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="NhTPWghT2PwqCPIxTWYN-5" edge="1" parent="1" source="NhTPWghT2PwqCPIxTWYN-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="NhTPWghT2PwqCPIxTWYN-2">
+
+        <mxCell id="e_gate3" edge="1" parent="1" source="n8" style="endArrow=block;html=1;strokeColor=#000000;" target="g3" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NhTPWghT2PwqCPIxTWYN-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Питання показано" vertex="1">
-          <mxGeometry height="60" width="60" x="330" y="90" as="geometry" />
-        </mxCell>
-        <mxCell id="NhTPWghT2PwqCPIxTWYN-6" edge="1" parent="1" source="NhTPWghT2PwqCPIxTWYN-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="NhTPWghT2PwqCPIxTWYN-3">
+        <mxCell id="e8a" edge="1" parent="1" source="g3" style="endArrow=block;html=1;strokeColor=#000000;" target="n9" value="успішно">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NhTPWghT2PwqCPIxTWYN-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Обрати/ввести відповідь" vertex="1">
-          <mxGeometry height="40" width="120" x="300" y="170" as="geometry" />
-        </mxCell>
-        <mxCell id="NhTPWghT2PwqCPIxTWYN-7" edge="1" parent="1" source="NhTPWghT2PwqCPIxTWYN-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="NhTPWghT2PwqCPIxTWYN-4">
+        <mxCell id="e8b" edge="1" parent="1" source="g3" style="endArrow=block;html=1;strokeColor=#000000;" target="n10" value="таймер">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NhTPWghT2PwqCPIxTWYN-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Зберегти відповідь" vertex="1">
-          <mxGeometry height="30" width="120" x="300" y="230" as="geometry" />
+        
+        <mxCell id="NhTPWghT2PwqCPIxTWYN-5" edge="1" parent="1" source="NhTPWghT2PwqCPIxTWYN-1" style="edgeStyle=none;html=1;" target="NhTPWghT2PwqCPIxTWYN-2">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NhTPWghT2PwqCPIxTWYN-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" value="Відповідь збережено" vertex="1">
-          <mxGeometry height="70" width="70" x="325" y="280" as="geometry" />
+        <mxCell id="NhTPWghT2PwqCPIxTWYN-6" edge="1" parent="1" source="NhTPWghT2PwqCPIxTWYN-2" style="edgeStyle=none;html=1;" target="NhTPWghT2PwqCPIxTWYN-3">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NhTPWghT2PwqCPIxTWYN-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" value="&lt;br style=&quot;font-size: 13px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(72, 71, 61)); font-size: 13px; font-weight: 700; text-align: left;&quot;&gt;&lt;span style=&quot;font-family: anthropic-sans, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Helvetica, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;PingFang TC&amp;quot;, &amp;quot;Hiragino Sans&amp;quot;, &amp;quot;Apple SD Gothic Neo&amp;quot;, sans-serif, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;PingFang SC&amp;quot;, &amp;quot;PingFang TC&amp;quot;, &amp;quot;Hiragino Sans&amp;quot;, &amp;quot;Apple SD Gothic Neo&amp;quot;, sans-serif; font-size: 14px; font-weight: 400;&quot;&gt;↻&lt;/span&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="50" x="415" y="320" as="geometry" />
+        <mxCell id="NhTPWghT2PwqCPIxTWYN-7" edge="1" parent="1" source="NhTPWghT2PwqCPIxTWYN-3" style="edgeStyle=none;html=1;" target="NhTPWghT2PwqCPIxTWYN-4">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
+
       </root>
     </mxGraphModel>
   </diagram>
