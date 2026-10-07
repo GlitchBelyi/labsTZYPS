@@ -24,7 +24,9 @@
 | Файл | Зміст |
 |---|---|
 | `requirements-defects.xlsx` | Реєстр (зведений), «Розподіл розділів», «Спірні» |
-| `SRS-1.1.docx` / `.md` | SRS з журналом змін |
+| `SRS-1.1.md` | SRS з журналом змін |
 | `test-plan.md` | План тестування: 7 рівнів, типи, незастосовні типи |
-| `task-board.xlsx` | Таблиця розподілу задач |
-| `retro-sprint2.md` | Протокол ретро (Start/Stop/Continue) |
+| `tasks.md` | Розподіл задач і розділів SRS |
+| `demo_prep.md` | Реалістичність плану, питання замовнику, сценарій демо, бліц |
+| `retro.md` | Протокол ретро (Start/Stop/Continue) |
+| `peer_review.md` | Peer-review форма |
