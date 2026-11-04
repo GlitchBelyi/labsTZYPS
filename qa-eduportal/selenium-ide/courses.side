@@ -1,0 +1,105 @@
+{
+  "id": "643399e5-d0a5-434d-801e-2adc28df3a26",
+  "version": "3.0",
+  "name": "courses",
+  "url": "http://www.google.com",
+  "urls": [
+    "http://www.google.com"
+  ],
+  "plugins": [],
+  "suites": [
+    {
+      "id": "b217f5b6-d9bb-4eb7-9557-6aa9c5a0acd5",
+      "name": "New Suite",
+      "parallel": false,
+      "persistSession": false,
+      "tests": [
+        "d3e9620c-a7d9-4bb7-8449-119ab34c8eef"
+      ],
+      "timeout": 30000
+    }
+  ],
+  "tests": [
+    {
+      "id": "d3e9620c-a7d9-4bb7-8449-119ab34c8eef",
+      "name": "New Test",
+      "commands": [
+        {
+          "id": "e48c71ae-e76b-4467-b8de-616a54f2c684",
+          "command": "open",
+          "target": "/",
+          "value": "",
+          "isBreakpoint": true
+        }
+      ]
+    },
+    {
+      "id": "2b9682cd-1e47-4b63-ae4b-45dca4ad10a2",
+      "name": "CoursesTest1",
+      "commands": [
+        {
+          "id": "f0b5b1b1-51dc-48a0-92d3-c0e013edc6d7",
+          "command": "open",
+          "target": "https://sandbox.moodledemo.net/",
+          "value": ""
+        },
+        {
+          "command": "assertElementPresent",
+          "target": "linkText=My second course",
+          "value": "",
+          "id": "aa18a87c-e2c4-47fd-9357-796dc8041a85"
+        },
+        {
+          "command": "assertElementPresent",
+          "target": "linkText=My first course",
+          "value": "",
+          "id": "ca0be21b-b0c1-42b2-a7ca-2fa997d52692",
+          "isBreakpoint": false
+        }
+      ]
+    },
+    {
+      "id": "7072bbb2-66c4-4ece-93da-217a06a07010",
+      "name": "CoursesTest2",
+      "commands": [
+        {
+          "id": "a63fcc12-b0a5-4cb9-a561-f2888c22535c",
+          "command": "open",
+          "target": "https://sandbox.moodledemo.net/search/index.php",
+          "value": ""
+        },
+        {
+          "command": "waitForElementPresent",
+          "target": "css=input[id^='searchinput']",
+          "value": "10000",
+          "id": "ffc9ecdf-461c-49f0-85a0-61b430a595a1"
+        },
+        {
+          "command": "executeScript",
+          "target": "document.querySelector('input[id^=\"searchinput\"]').value = 'T3-Zzzq-9999';",
+          "value": "",
+          "id": "cff8e264-4fe2-4667-aa95-4ecc0ac88ab5"
+        },
+        {
+          "command": "executeScript",
+          "target": "document.querySelector('input[id^=\"searchinput\"]').dispatchEvent(new KeyboardEvent('keydown', {'key': 'Enter'}));",
+          "value": "",
+          "id": "1b734c0c-209b-42a0-a54b-5fe7672b029a"
+        },
+        {
+          "command": "executeScript",
+          "target": "return document.body.innerText.includes('Результат відсутній');",
+          "value": "",
+          "id": "46e14777-b8cd-421d-ae6f-7723060538e9"
+        }
+      ]
+    }
+  ],
+  "snapshot": {
+    "dependencies": {},
+    "tests": [],
+    "jest": {
+      "extraGlobals": []
+    }
+  }
+}
