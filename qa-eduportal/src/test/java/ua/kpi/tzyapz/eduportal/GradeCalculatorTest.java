@@ -58,14 +58,17 @@ class GradeCalculatorTest {
             assertEquals("A", calc.ectsLetter(95.0));
         }
 
-        // Якщо замовник змінить ставку, зміняться очікування в цьому класі, а не оцінка модуля як дефектного
+        
         @ParameterizedTest(name = "BL-20: ectsLetter({0}) → IllegalArgumentException")
         @ValueSource(doubles = {-0.01, 100.01})
         void totalOutOfRangeThrows(double total) {
             assertThrows(IllegalArgumentException.class, () -> calc.ectsLetter(total));
         }
     }
-
+ 
+    // BL-30: 10 % за добу і максимум 50 % — за SRS 1.1, яка потребує підтвердження замовником
+    // (Q5 за automation-plan.md: 10 % чи 5 %). Якщо замовник змінить ставку, зміняться
+    // очікування в цьому класі, а не оцінка модуля як дефектного.
     @Nested
     @DisplayName("BL-30: latePenalty — штраф за запізнення")
     class LatePenalty {
@@ -97,7 +100,7 @@ class GradeCalculatorTest {
             assertEquals(expected, calc.latePenalty(score, daysLate), EPS);
         }
 
-        // Усі точні значення біля межі округлення мають 3 знаки після коми, останній 5 або менше:
+        // Значення біля межі округлення; перевіряємо HALF_UP:
         // 33.35 * 0.9 = 30.015 → 30.02; 5.55 * 0.9 = 4.995 → 5.00 (HALF_UP).
         @ParameterizedTest(name = "BL-30: бал {0}, 1 доба → {2} (округлення HALF_UP до 2 знаків)")
         @CsvSource({"33.35, 1, 30.02", "16.65, 1, 14.99", "1.05, 1, 0.95", "5.55, 1, 5.00", "33.33, 1, 30.00"})
