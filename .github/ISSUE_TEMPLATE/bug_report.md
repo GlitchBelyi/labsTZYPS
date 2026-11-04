@@ -1,11 +1,12 @@
 ---
 name: Звіт про дефект
 about: Один дефект — одна issue
-labels: ["status:new", "sprint:3"]
+labels: ["status:new", "sprint:4"]
 ---
 **Title:** <проблема + умова, без «не працює»>
 **Severity:** Blocker | Critical | Major | Normal | Minor | Trivial  **Priority:** P1 | P2 | P3
 **Linked:** test case TC-___; requirement ___
+**Версія модуля:** v1.0.0
 **Reporter:** <ПІБ>, <дата>  **Reviewer:** <ПІБ>, <дата>
 
 ### Description
