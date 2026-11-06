@@ -22,8 +22,8 @@ class NavigationUiTest extends BaseUiTest {
     @DisplayName("TC-042: гість бачить навігаційну панель із посиланням «Увійти» (/login/index.php)")
     void guestSeesNavbarAndLoginLink() {
         driver.get(BASE_URL + "/");
-        assertTrue(wait.until(d -> !d.findElements(By.cssSelector("nav.navbar")).isEmpty()),
-                "Навігаційна панель відсутня");
+        Boolean navbarShown = wait.until(d -> !d.findElements(By.cssSelector("nav.navbar")).isEmpty());
+        assertTrue(navbarShown, "Навігаційна панель відсутня");
         assertFalse(driver.findElements(By.cssSelector("a[href*='/login/index.php']")).isEmpty(),
                 "Немає посилання на форму входу");
     }
