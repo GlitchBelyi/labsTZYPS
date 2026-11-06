@@ -12,6 +12,7 @@ import java.util.Map;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -24,6 +25,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  * винесено як питання замовнику Q1 (Issue #38). Дефекти: #35 (BL-74), #36 (BL-76).
  * Тест, що впав, не вимикається (@Disabled заборонено): він посилається на Issue.
  */
+@Tag("unit")
 @DisplayName("EnrollmentValidator: BL-70 canEnroll, BL-80 violations")
 class EnrollmentValidatorBl70Bl80Test {
 
