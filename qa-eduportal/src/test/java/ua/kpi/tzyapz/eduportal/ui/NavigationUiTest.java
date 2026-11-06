@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
@@ -13,6 +14,7 @@ import org.openqa.selenium.By;
  * Локатори не залежать від мови: id, href, структура.
  * Червоні перевірки посилаються на відомі дефекти demo зі спринта 3 (#5, #6).
  */
+@Tag("ui")
 @DisplayName("UI-06 / TC-042: верхня панель гостя")
 class NavigationUiTest extends BaseUiTest {
 
