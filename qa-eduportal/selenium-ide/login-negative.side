@@ -1,0 +1,134 @@
+{
+  "id": "13d464e1-44d6-44f0-9b82-c319a1f1bcfc",
+  "version": "2.0",
+  "name": "login-negative",
+  "url": "https://sandbox.moodledemo.net",
+  "tests": [
+    {
+      "id": "d23a98a9-28c2-460e-9562-8a87d3923db4",
+      "name": "UI-05 TC-002 wrong password",
+      "commands": [
+        {
+          "id": "07fdb18c-74fd-46ad-9df1-004a4f95caec",
+          "comment": "",
+          "command": "open",
+          "target": "/login/index.php",
+          "targets": [
+            [
+              "/login/index.php",
+              "/login/index.php"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "32bb3b10-2f04-4b4c-b763-060952818106",
+          "comment": "",
+          "command": "type",
+          "target": "id=username",
+          "targets": [
+            [
+              "id=username",
+              "id"
+            ]
+          ],
+          "value": "student"
+        },
+        {
+          "id": "bd7ee042-4de9-4a4b-b5c7-1d3f54c8ede3",
+          "comment": "",
+          "command": "type",
+          "target": "id=password",
+          "targets": [
+            [
+              "id=password",
+              "id"
+            ]
+          ],
+          "value": "Wrong-pass-9"
+        },
+        {
+          "id": "94849ee1-9f30-4817-8982-927c5d90f5c1",
+          "comment": "",
+          "command": "click",
+          "target": "id=loginbtn",
+          "targets": [
+            [
+              "id=loginbtn",
+              "id"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1e9243b8-08ce-49d1-9015-5442256eade6",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=.loginerrors .alert-danger",
+          "targets": [
+            [
+              "css=.loginerrors .alert-danger",
+              "css"
+            ]
+          ],
+          "value": "10000"
+        },
+        {
+          "id": "705b79fc-ef82-438d-a185-940a7f71bd0c",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "css=.loginerrors .alert-danger",
+          "targets": [
+            [
+              "css=.loginerrors .alert-danger",
+              "css"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "63e70437-30aa-4469-a56c-94eea1ab47ff",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=username",
+          "targets": [
+            [
+              "id=username",
+              "id"
+            ]
+          ],
+          "value": "student"
+        },
+        {
+          "id": "28388522-c1eb-431d-aadc-6fc1ba16fb04",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "id=loginbtn",
+          "targets": [
+            [
+              "id=loginbtn",
+              "id"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "59cf8241-48f0-41c6-bd76-5bc76fc45922",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "d23a98a9-28c2-460e-9562-8a87d3923db4"
+      ]
+    }
+  ],
+  "urls": [
+    "https://sandbox.moodledemo.net/"
+  ],
+  "plugins": []
+}
