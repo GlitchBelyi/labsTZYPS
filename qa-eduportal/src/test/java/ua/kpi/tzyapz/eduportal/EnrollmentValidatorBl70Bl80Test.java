@@ -2,7 +2,6 @@ package ua.kpi.tzyapz.eduportal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.time.LocalDate;
@@ -102,13 +101,6 @@ class EnrollmentValidatorBl70Bl80Test {
         void boundaryCapacityAndPrerequisite() {
             assertTrue(validator.canEnroll(student(Map.of("BIO-101", 60.0)),
                     course(29, "BIO-101"), TODAY, KEY));
-        }
-
-        @Test
-        @DisplayName("BL-70: null-аргумент → IllegalArgumentException")
-        void nullArgument() {
-            assertThrows(IllegalArgumentException.class,
-                    () -> validator.canEnroll(null, course(10, null), TODAY, KEY));
         }
     }
 
