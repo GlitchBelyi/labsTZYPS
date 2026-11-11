@@ -56,7 +56,7 @@
 |---|---|---|
 | UI-01 `LoginUiTest.studentLoginOpensDashboard` (TC-001) | error | Після спроби входу за 15 с URL лишився `https://sandbox.moodledemo.net/login/index.php?loginredirect=1`. Чи це дефект demo (дефект #1 зі спринта 3), чи збій середовища, треба перевірити повторним запуском на demo |
 | UI-03/UI-04 `LoginFormUiTest.loginFormHasExpectedElements` (TC-017) | passed | |
-| UI-04 `LoginFormUiTest.loginFormTextsMatchSrs` (TC-017) | failed | 3 розбіжності текстів форми входу з GUI-10; Issue ще не створено, потрібен тріаж |
+| UI-04 LoginFormUiTest.loginFormTextsMatchSrs (TC-017) | failed | 3 розбіжності текстів форми входу з GUI-10; дефект зафіксовано в Issue #2 |
 | UI-02/UI-03 `CoursesUiTest` (TC-004, TC-005) | passed | 2 з 2 |
 | UI-06 `NavigationUiTest` (TC-042) | passed | 3 з 3 |
 | UI-05 `LoginNegativeUiTest` (TC-002) | немає в `main` | чекає на PR Білогривого |
