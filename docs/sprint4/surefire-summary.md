@@ -63,3 +63,5 @@
 | UI-04 `LoginFormUiTest.loginFormTextsMatchSrs` | failed | 3 розбіжності текстів, Issue #2 |
 | UI-05 `LoginNegativeUiTest.wrongPasswordStaysOnLoginPage` (TC-002) | error | TimeoutException (не дочекалися повідомлення про помилку за 15 с) |
 | UI-06 `NavigationUiTest` (TC-042) | passed | 3 з 3 |
+| UI-07 LoginTitleUiTest (TC-019) | passed | |
+| UI-08 LoginForgotPasswordUiTest (TC-018) | passed | |
