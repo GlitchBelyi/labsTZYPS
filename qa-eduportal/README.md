@@ -49,7 +49,7 @@ mvn test -DexcludedGroups=none -Dtest=LoginFormUiTest
 | Ромашко | BL-20, BL-30 (`GradeCalculatorTest`) | UI-02, UI-03 (TC-004, TC-005) |
 | Александрова | BL-40, BL-50 (`QuizScorerTest`) | UI-04 (TC-017) |
 | Білогривий | BL-60 (`QuizScorerScoreTest`), BL-72…78 (`EnrollmentValidatorBl7xTest`) | UI-05 (TC-002) |
-| Мележик | BL-70, BL-80 (`EnrollmentValidatorBl70Bl80Test`) | UI-06 (TC-042) |
+| Мележик | BL-70, BL-80 (`EnrollmentValidatorBl70Bl80Test`) | UI-06 (TC-042), UI-07 (TC-019), UI-08 (TC-018) |
 
 ## 5. Що всередині (класи модуля)
 
@@ -80,5 +80,5 @@ mvn test -DexcludedGroups=none -Dtest=LoginFormUiTest
 ## 7. Поточний статус тестів (станом на 11.11.2026)
 
 * **Юніт-тести (`mvn clean test`):** `Tests run: 147, Failures: 43, Errors: 1`.
-* **Усі тести (`mvn test -DexcludedGroups=none`):** `Tests run: 156, Failures: 45, Errors: 2`.
+* **Усі тести (`mvn test -DexcludedGroups=none`):** `Tests run: 158, Failures: 45, Errors: 2`.
 * **Детальний звіт:** дивіться файл `docs/surefire-summary.md`.
