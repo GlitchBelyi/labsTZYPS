@@ -2,9 +2,9 @@
 
 * **Продукт:** Навчальна платформа «ЕдуПортал»
 * **Спринт:** Спринт 4
-* **Автор / Роль:** Тест-аналітик (ТА) - Ромашко
-* **Дата складання:** 4 листопада 2026 року
-* **Статус:** Рецензовано КТ
+* **Автор / Роль:** Тест-аналітик (ТА) — Ромашко
+* **Дата складання:** 11 листопада 2026 року
+* **Статус:** Рецензовано СМ
 * **Охоплення:** документ описує всі вісім автоматизованих UI-кейсів спринту — TC-001, TC-002, TC-004, TC-005, TC-017, TC-018, TC-019, TC-042. Реалізація — JUnit 5 + Selenium WebDriver у пакеті `ua.kpi.tzyapz.eduportal.ui`. Спільна інфраструктура — `BaseUiTest` (ChromeDriver у режимі `--headless=new`, `WebDriverWait` з таймаутом 15 с, тег `ui`).
 
 **Відповідність тест-класів і кейсів:**
@@ -12,13 +12,13 @@
 | Тест-клас / метод | TC | Вимога |
 |---|---|---|
 | `CoursesUiTest.guestSeesCourseList` | TC-004 | F-30 |
-| `CoursesUiTest.searchWithoutMatchesShowsMessage` | TC-005 | — |
+| `CoursesUiTest.searchWithoutMatchesShowsMessage` | TC-005 | F-30 |
 | `LoginUiTest.studentLoginOpensDashboard` | TC-001 | F-10 |
 | `LoginNegativeUiTest.wrongPasswordStaysOnLoginPage` | TC-002 | F-10 |
 | `LoginFormUiTest.loginFormHasExpectedElements` | TC-017 | GUI-10 |
 | `LoginFormUiTest.loginFormTextsMatchSrs` | TC-017 | GUI-10 / SRS 1.1 |
-| `LoginForgotPasswordUiTest.forgotPasswordLinkOpensRecoveryPage` | TC-018 | UI-08 |
-| `LoginTitleUiTest.loginPageTitleContainsLogIn` | TC-019 | UI-07 |
+| `LoginForgotPasswordUiTest.forgotPasswordLinkOpensRecoveryPage` | TC-018 | GUI-10 |
+| `LoginTitleUiTest.loginPageTitleContainsLogIn` | TC-019 | GUI-10 |
 | `NavigationUiTest.guestSeesNavbarAndLoginLink` | TC-042 | GUI-75 |
 | `NavigationUiTest.guestHasNoUserMenu` | TC-042 | GUI-75 |
 | `NavigationUiTest.languageSwitcherPresent` | TC-042 | GUI-75 |
@@ -50,6 +50,7 @@
 ## TC-005: Валідація глобального пошуку при введенні неіснуючого запиту
 
 * **Тест-метод:** `CoursesUiTest.searchWithoutMatchesShowsMessage`
+* **Вимога:** F-30
 * **Опис:** Перевірка коректності обробки пошукового запиту системою Moodle, коли за введеним значенням немає жодних збігів.
 * **URL:** `https://sandbox.moodledemo.net/search/index.php?lang=uk`
 * **Покроковий сценарій:**
@@ -123,6 +124,7 @@
 ## TC-018 / UI-08: Посилання «Забули пароль?» відкриває сторінку відновлення
 
 * **Тест-метод:** `LoginForgotPasswordUiTest.forgotPasswordLinkOpensRecoveryPage`
+* **Вимога:** GUI-10
 * **Передумови:** Відкрито `https://sandbox.moodledemo.net/login/index.php`. Не авторизований. Сторінку не змінюємо, акаунт не використовуємо, форму відновлення не надсилаємо (етика demo).
 * **Кроки:**
   1. Відкрити сторінку входу.
@@ -136,6 +138,7 @@
 ## TC-019 / UI-07: Заголовок вкладки сторінки входу
 
 * **Тест-метод:** `LoginTitleUiTest.loginPageTitleContainsLogIn`
+* **Вимога:** GUI-10
 * **Передумови:** Відкрито `https://sandbox.moodledemo.net/login/index.php`. Не авторизований.
 * **Кроки:**
   1. Відкрити сторінку входу.
