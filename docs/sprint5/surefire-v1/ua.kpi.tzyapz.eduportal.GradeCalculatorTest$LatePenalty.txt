@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.026 s <<< FAILURE! -- in ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty
+Tests run: 23, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.035 s <<< FAILURE! -- in ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty
 ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty.penaltyIsLinearNotCompound(double, int, double)[1] -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <64.0> but was: <64.8>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
@@ -174,7 +174,7 @@ org.opentest4j.AssertionFailedError: expected: <42.0> but was: <43.74>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty.penaltyIsCappedAtFiftyPercent(double, int, double)[1] -- Time elapsed: 0 s <<< FAILURE!
+ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty.penaltyIsCappedAtFiftyPercent(double, int, double)[1] -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <40.0> but was: <47.24>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -217,7 +217,7 @@ org.opentest4j.AssertionFailedError: expected: <40.0> but was: <47.24>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty.penaltyIsCappedAtFiftyPercent(double, int, double)[2] -- Time elapsed: 0 s <<< FAILURE!
+ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty.penaltyIsCappedAtFiftyPercent(double, int, double)[2] -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <40.0> but was: <47.24>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -260,7 +260,7 @@ org.opentest4j.AssertionFailedError: expected: <40.0> but was: <47.24>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty.penaltyIsCappedAtFiftyPercent(double, int, double)[3] -- Time elapsed: 0.001 s <<< FAILURE!
+ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty.penaltyIsCappedAtFiftyPercent(double, int, double)[3] -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <40.0> but was: <47.24>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -303,7 +303,7 @@ org.opentest4j.AssertionFailedError: expected: <40.0> but was: <47.24>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty.penaltyIsCappedAtFiftyPercent(double, int, double)[4] -- Time elapsed: 0 s <<< FAILURE!
+ua.kpi.tzyapz.eduportal.GradeCalculatorTest$LatePenalty.penaltyIsCappedAtFiftyPercent(double, int, double)[4] -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <50.0> but was: <59.05>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

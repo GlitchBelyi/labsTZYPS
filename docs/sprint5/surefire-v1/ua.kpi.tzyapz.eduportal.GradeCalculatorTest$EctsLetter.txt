@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: ua.kpi.tzyapz.eduportal.GradeCalculatorTest$EctsLetter
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! -- in ua.kpi.tzyapz.eduportal.GradeCalculatorTest$EctsLetter
-ua.kpi.tzyapz.eduportal.GradeCalculatorTest$EctsLetter.lowerBoundOfAIsInclusive -- Time elapsed: 0 s <<< FAILURE!
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.012 s <<< FAILURE! -- in ua.kpi.tzyapz.eduportal.GradeCalculatorTest$EctsLetter
+ua.kpi.tzyapz.eduportal.GradeCalculatorTest$EctsLetter.lowerBoundOfAIsInclusive -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <A> but was: <B>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

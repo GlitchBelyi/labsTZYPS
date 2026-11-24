@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: ua.kpi.tzyapz.eduportal.QuizScorerTest$MultipleCorrect
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.010 s <<< FAILURE! -- in ua.kpi.tzyapz.eduportal.QuizScorerTest$MultipleCorrect
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in ua.kpi.tzyapz.eduportal.QuizScorerTest$MultipleCorrect
 ua.kpi.tzyapz.eduportal.QuizScorerTest$MultipleCorrect.scoreIsNeverNegative(String)[1] -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <0.0> but was: <-0.16666666666666669>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
@@ -45,7 +45,7 @@ org.opentest4j.AssertionFailedError: expected: <0.0> but was: <-0.16666666666666
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-ua.kpi.tzyapz.eduportal.QuizScorerTest$MultipleCorrect.scoreIsNeverNegative(String)[2] -- Time elapsed: 0 s <<< FAILURE!
+ua.kpi.tzyapz.eduportal.QuizScorerTest$MultipleCorrect.scoreIsNeverNegative(String)[2] -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <0.0> but was: <-1.0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

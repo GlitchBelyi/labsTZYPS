@@ -1,4 +1,32 @@
 -------------------------------------------------------------------------------
 Test set: ua.kpi.tzyapz.eduportal.EnrollmentValidatorBl70Bl80Test$CanEnroll
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in ua.kpi.tzyapz.eduportal.EnrollmentValidatorBl70Bl80Test$CanEnroll
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! -- in ua.kpi.tzyapz.eduportal.EnrollmentValidatorBl70Bl80Test$CanEnroll
+ua.kpi.tzyapz.eduportal.EnrollmentValidatorBl70Bl80Test$CanEnroll.afterPeriod -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:231)
+	at ua.kpi.tzyapz.eduportal.EnrollmentValidatorBl70Bl80Test$CanEnroll.afterPeriod(EnrollmentValidatorBl70Bl80Test.java:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+ua.kpi.tzyapz.eduportal.EnrollmentValidatorBl70Bl80Test$CanEnroll.noCapacity -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:231)
+	at ua.kpi.tzyapz.eduportal.EnrollmentValidatorBl70Bl80Test$CanEnroll.noCapacity(EnrollmentValidatorBl70Bl80Test.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
