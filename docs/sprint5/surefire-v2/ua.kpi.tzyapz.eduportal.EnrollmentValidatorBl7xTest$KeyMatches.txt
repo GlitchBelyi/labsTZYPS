@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: ua.kpi.tzyapz.eduportal.EnrollmentValidatorBl7xTest$KeyMatches
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! -- in ua.kpi.tzyapz.eduportal.EnrollmentValidatorBl7xTest$KeyMatches
+ua.kpi.tzyapz.eduportal.EnrollmentValidatorBl7xTest$KeyMatches.courseKeyNotSet -- Time elapsed: 0 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "ua.kpi.tzyapz.eduportal.Course.enrolmentKey()" is null
+	at ua.kpi.tzyapz.eduportal.EnrollmentValidator.keyMatches(EnrollmentValidator.java:29)
+	at ua.kpi.tzyapz.eduportal.EnrollmentValidatorBl7xTest$KeyMatches.courseKeyNotSet(EnrollmentValidatorBl7xTest.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

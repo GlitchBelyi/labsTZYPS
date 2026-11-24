@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: ua.kpi.tzyapz.eduportal.QuizScorerScoreTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! -- in ua.kpi.tzyapz.eduportal.QuizScorerScoreTest
+ua.kpi.tzyapz.eduportal.QuizScorerScoreTest.answerIdNotInKeyThrows -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at ua.kpi.tzyapz.eduportal.QuizScorerScoreTest.answerIdNotInKeyThrows(QuizScorerScoreTest.java:82)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
