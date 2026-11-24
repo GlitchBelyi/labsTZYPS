@@ -15,8 +15,8 @@
 - **Симптом:** `EnrollmentValidatorBl70Bl80Test$CanEnroll.boundaryCapacityAndPrerequisite` (падає з тієї ж причини).
 - **Результат v1:** Passed | **Результат v2:** Failed
 - **Severity:** Major | **Priority:** P2
-- **Порушена вимога:** BL-78 (раніше BL-70)
-- **Причина (за реальним diff v1 → v2):** У методі `checkPrerequisite` умову `grade >= PREREQUISITE_PASS` було змінено на `grade > PREREQUISITE_PASS`. 
+- **Порушена вимога:** BL-78
+- **Причина (за реальним diff v1 → v2):** У методі `prerequisiteMet` умову `grade >= PREREQUISITE_PASS` було змінено на `grade > PREREQUISITE_PASS`. 
 - **Фактичний результат:** Студент із балом рівно 60.0 не проходить перевірку (`expected: <true> but was: <false>`).
 
 ---
@@ -29,4 +29,4 @@
 - **#63** (`HasCapacity.invalid`) — закрито як дублікат оригінального дефекту **#46** (BL-76). Оригінал переведено в Reopened.
 - **#65** (`answerIdNotInKeyThrows`) — закрито як дублікат оригінального дефекту **#44** (BL-60). Оригінал переведено в Reopened.
 
-*(Усі інші 42 падіння на v2 відповідають падінням на v1 і залишаються в статусі Reopened / Open).*
+*(Інші 22 падіння на v2 — це 21 Failed + 1 Error — відповідають падінням на v1 і залишаються в статусі Reopened / Open).*
